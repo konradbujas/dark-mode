@@ -1,6 +1,7 @@
 :root {
-    --background-color: rgb(55, 56, 59);
-    --text-color: rgb(114, 107, 107);
+    --background-color: #fefefe;
+    --text-color: #333333;
+    /* color: #8f8a8a; */
 }
 
 
@@ -9,6 +10,7 @@
 body{
     background-color: var(--background-color);
     color: var(--text-color);
+    width: 600px;
 }
 .mode--js{
     position: absolute;
@@ -16,7 +18,7 @@ body{
       right: 16px;
       border: none;
 }
-    
+
       
 .heading{
     margin-top: 50px;
