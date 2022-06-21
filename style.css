@@ -11,12 +11,68 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     width: 600px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
 }
+.button_main {
+    background: #fefefe;
+    color: rgb(75, 71, 71);
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 24px 0;
+    padding: 12px 24px;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.button_main:hover {
+    background: #000;
+    color: #fff;
+}
+
+.button_mode {
+    background: #000;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    outline-width: 5px;
+    position: relative;
+    width: 100px;
+    margin-top: 50px;
+
+}
+
+.icon {
+    background-color: grey;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 3px 3px;
+    position: relative;
+    width: 30px;
+}
+
+span {
+    bottom: 100%;
+    color: #000;
+    left: 50%;
+    padding: 6px 0;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
 .mode--js{
     position: absolute;
-      top: 12px;
-      right: 16px;
-      border: none;
+      top: 25px;
+      right: 50px;
+      
 }
 
       
