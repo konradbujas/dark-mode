@@ -79,3 +79,18 @@ span {
 .heading{
     margin-top: 50px;
 }
+
+
+/* DARK MODE */
+
+body.dark,
+body.dark main button {
+    background: #000;
+    color: #fff;
+}
+
+body.dark main button:hover {
+    background: #fff;
+    color: #000;
+}
+

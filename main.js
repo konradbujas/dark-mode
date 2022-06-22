@@ -32,9 +32,6 @@ const switchButton = document.querySelector(".button_mode");
 console.log(switchButton);
 
 switchButton.addEventListener("click", () => {
-    console.log("test");
-    document.querySelector("body").style.backgroundColor = "#000";
-    document.querySelector("body").style.color = "#fff";
-    document.querySelector(".button_main").style.backgroundColor = "#000";
-    document.querySelector(".button_main").style.color = "#fff";
+    document.querySelector("body"). classList.add("dark");
+    
 });
