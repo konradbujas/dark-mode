@@ -33,5 +33,4 @@ console.log(switchButton);
 
 switchButton.addEventListener("click", () => {
     document.querySelector("body"). classList.toggle("dark");
-    
 });
