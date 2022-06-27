@@ -31,13 +31,13 @@
 const switchButton = document.querySelector(".button_mode");
 console.log(switchButton);
 
-
-// let theme = localStorage.getItem("theme") || "light";
-if (localStorage.getItem("theme")) {
-    theme = localStorage.getItem("theme");
-} else {
-    theme = "light";
-}
+let theme = localStorage.getItem("theme");
+// // let theme = localStorage.getItem("theme") || "light";
+// if (localStorage.getItem("theme")) {
+//     theme = localStorage.getItem("theme");
+// } else {
+//     theme = "light";
+// }
 
 
 switchButton.addEventListener("click", () => {
@@ -60,4 +60,8 @@ console.log(theme);
 
 if (theme === "dark") {
     document.querySelector("body").classList.add("dark");
+}
+
+if (theme === "light") {
+    document.querySelector("body").classList.add("light");
 }
