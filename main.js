@@ -32,6 +32,5 @@ const switchButton = document.querySelector(".button_mode");
 console.log(switchButton);
 
 switchButton.addEventListener("click", () => {
-    document.querySelector("body"). classList.add("dark");
-    
+    document.querySelector("body"). classList.toggle("dark");
 });
