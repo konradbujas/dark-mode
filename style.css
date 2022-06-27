@@ -1,14 +1,13 @@
 :root {
-    --background-color: #fefefe;
-    --text-color: #333333;
-    /* color: #8f8a8a; */
+    --color-bg: #fff;
+    --color-main: #000;
 }
 
 
 
 
 body{
-    background-color: var(--background-color);
+    background-color: var(--color-bg);
     color: var(--text-color);
     width: 600px;
     padding: 16px;
@@ -82,15 +81,3 @@ span {
 
 
 /* DARK MODE */
-
-body.dark,
-body.dark main button {
-    background: #000;
-    color: #fff;
-}
-
-body.dark main button:hover {
-    background: #fff;
-    color: #000;
-}
-
