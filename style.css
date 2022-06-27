@@ -8,15 +8,16 @@
 
 body{
     background-color: var(--color-bg);
-    color: var(--text-color);
+    color: var(--color-main);
     width: 600px;
     padding: 16px;
     display: flex;
     flex-direction: column;
 }
 .button_main {
-    background: #fefefe;
-    color: rgb(75, 71, 71);
+    border: solid 0.2vw;
+    background: var(--color-bg);
+    color: var(--color-main);
     cursor: pointer;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
@@ -27,15 +28,15 @@ body{
 }
 
 .button_main:hover {
-    background: #000;
-    color: #fff;
+    background: var(--color-main);
+    color: var(--color-bg);
 }
 
 .button_mode {
     background: #000;
     border: solid 2px #fff;
     border-radius: 50px;
-    color: #fff;
+    color: var(--color-bg);
     cursor: pointer;
     height: 50px;
     outline-width: 5px;
@@ -58,7 +59,7 @@ body{
 
 span {
     bottom: 100%;
-    color: #000;
+    color: var(--color-main);
     left: 50%;
     padding: 6px 0;
     position: absolute;
@@ -81,3 +82,9 @@ span {
 
 
 /* DARK MODE */
+
+body.dark {
+    --color-bg: #000;
+    --color-main: #fff;
+    
+}
