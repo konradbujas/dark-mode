@@ -44,8 +44,10 @@ switchButton.addEventListener("click", () => {
     // document.querySelector("body"). classList.toggle("dark");
     if (theme === "dark") {
         document.querySelector("body").classList.remove("dark");
+        document.querySelector("body").classList.add("light");
         theme = "light";
     } else {
+        document.querySelector("body").classList.remove("light");
         document.querySelector("body").classList.add("dark");
         theme = "dark";
     }
