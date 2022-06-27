@@ -31,6 +31,31 @@
 const switchButton = document.querySelector(".button_mode");
 console.log(switchButton);
 
+
+// let theme = localStorage.getItem("theme") || "light";
+if (localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme");
+} else {
+    theme = "light";
+}
+
+
 switchButton.addEventListener("click", () => {
-    document.querySelector("body"). classList.toggle("dark");
+    // document.querySelector("body"). classList.toggle("dark");
+    if (theme === "dark") {
+        document.querySelector("body").classList.remove("dark");
+        theme = "light";
+    } else {
+        document.querySelector("body").classList.add("dark");
+        theme = "dark";
+    }
+
+    localStorage.setItem("theme", theme);
 });
+
+// let theme = localStorage.getItem("theme");
+console.log(theme);
+
+if (theme === "dark") {
+    document.querySelector("body").classList.add("dark");
+}
